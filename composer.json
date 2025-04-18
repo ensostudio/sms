@@ -1,0 +1,34 @@
+{
+  "name": "ensostudio/sms",
+  "type": "library",
+  "homepage": "https://github.com/ensostudio/sms",
+  "description": "Package for sending SMS via service gateways",
+  "keywords": ["sms", "send sms", "sms gateway", "php"],
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Enso studio",
+      "email": "info@ensostudio.ru",
+      "role": "developer"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "psr/http-message": "^2.0",
+    "psr/http-client": "^1.0",
+    "psr/http-factory": "^1.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "EnsoStudio\\Sms\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "EnsoStudio\\Sms\\": "tests/"
+    }
+  }
+}
